@@ -20,7 +20,7 @@
   
   ## Questions
 
-  <### TBD DEPLOY TO RENDER ###> 
+  Deply: https://my-tech-blog-f71x.onrender.com
 
   GitHub username: mbrown50
 
