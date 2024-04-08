@@ -20,7 +20,7 @@
   
   ## Questions
 
-  Deply: https://my-tech-blog-f71x.onrender.com
+  Deply: https://my-text-editor2.onrender.com/
 
   GitHub username: mbrown50
 
