@@ -1,3 +1,4 @@
+/*
 import { offlineFallback, warmStrategyCache } from 'workbox-recipes';
 import { ExpirationPlugin } from 'workbox-expiration';
 
@@ -5,16 +6,14 @@ import { registerRoute } from 'workbox-routing';
 import { StaleWhileRevalidate, CacheFirst } from 'workbox-strategies';
 import { precacheAndRoute } from 'workbox-precaching';
 import { CacheableResponsePlugin } from 'workbox-cacheable-response';
+*/
 
-/*
 const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
 const { CacheFirst } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 const { ExpirationPlugin } = require('workbox-expiration');
-//const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
-const { precacheAndRoute } = require('workbox-precaching');
-*/
+const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
 
 precacheAndRoute(self.__WB_MANIFEST);
 
@@ -35,16 +34,17 @@ warmStrategyCache({
   strategy: pageCache,
 });
 
-//registerRoute(({ request }) => request.mode === 'navigate', pageCache);
+registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-// TODO: Implement asset caching
-
+// TODO: Implement asset caching - done
+/*
 // Register route for caching dynamic CSS and JS files.
 // i.e. bootstrap, jQuery, ...
 // The StaleWhileRevalidate strategy serves content from cache AND loads it from source if needed.
 registerRoute(
   ({ request }) => {
     console.log(request);
+    request.mode === 'navigate', pageCache;
     return (
       // CSS
       request.destination === 'style' ||
@@ -61,6 +61,7 @@ registerRoute(
     ],
   })
 );
+*/
 
 // Register route for caching dynamic images
 // The cache first strategy is often the best choice for images because it saves bandwidth and improves performance.

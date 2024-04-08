@@ -2,14 +2,16 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
-// Require registerSW method
-import { registerSW } from './register-sw';
 
 import { postDb, getAllDb } from './database';
 
-//import logo from '../../favicon.ico'
+// code for src-sw.js moved to register-sw 
+// Require registerSW method
+import { registerSW } from './register-sw';
 
-//document.getElementById("logo").src = logo;
+import logo from '../../favicon.ico'
+
+document.getElementById("logo").src = logo;
 
 /*
 form.addEventListener('submit', (event) => {
@@ -18,14 +20,12 @@ form.addEventListener('submit', (event) => {
 });
 */
 
-/*
 const fetchList = async () => {
   const result = await getAllDb();
   console.log(result);
 };
-*/
 
-//fetchList();
+fetchList();
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
@@ -47,14 +47,3 @@ if (typeof editor === 'undefined') {
   loadSpinner();
 }
 
-// Check if service workers are supported
-if ('serviceWorker' in navigator) {
-  // register workbox service worker
-  const workboxSW = new Workbox('../src-sw.js');
-  workboxSW.register();
-} else {
-  console.error('Service workers are not supported in this browser.');
-}
-
-// Call registerSW method
-registerSW();
