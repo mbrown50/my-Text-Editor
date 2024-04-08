@@ -6,16 +6,6 @@ import { StaleWhileRevalidate, CacheFirst } from 'workbox-strategies';
 import { precacheAndRoute } from 'workbox-precaching';
 import { CacheableResponsePlugin } from 'workbox-cacheable-response';
 
-/*
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
-const { CacheFirst } = require('workbox-strategies');
-const{ registerRoute } = require('workbox-routing');
-const { CacheableResponsePlugin } = require('workbox-cacheable-response');
-const { ExpirationPlugin } = require('workbox-expiration');
-import { precacheAndRoute } from 'workbox-precaching';
-//const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
-*/
-
 precacheAndRoute(self.__WB_MANIFEST);
 
 const pageCache = new CacheFirst({
