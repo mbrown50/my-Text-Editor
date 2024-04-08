@@ -78,11 +78,10 @@ module.exports = () => {
         template: './index.html',
       }),
       new MiniCssExtractPlugin(),
-      /*new InjectManifest({
+      new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'service-worker.js',
       }), 
-      */
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'Webpack Plugin'
