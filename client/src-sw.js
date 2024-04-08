@@ -42,6 +42,7 @@ warmStrategyCache({
 // Register route for caching dynamic CSS and JS files.
 // i.e. bootstrap, jQuery, ...
 // The StaleWhileRevalidate strategy serves content from cache AND loads it from source if needed.
+/*
 registerRoute(
   ({ request }) => {
     console.log(request);
@@ -61,6 +62,8 @@ registerRoute(
     ],
   })
 );
+*/
+registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // Register route for caching dynamic images
 // The cache first strategy is often the best choice for images because it saves bandwidth and improves performance.
