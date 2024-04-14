@@ -13,10 +13,8 @@
   ## License
   
   License: MIT
-  
-  Badge: https://img.shields.io/badge/License-MIT-yellow.svg
-  
-  Link: https://opensource.org/licenses/MIT
+
+  [<img src="https://img.shields.io/badge/License-MIT-yellow.svg">](https://opensource.org/licenses/MIT)
   
   ## Questions
 
