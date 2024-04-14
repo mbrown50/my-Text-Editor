@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
     "start": "npm run build && cd server && node server.js",
     "server": "cd server server.js --ignore client",
@@ -16,16 +15,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "build": "^0.1.4",
     "express": "^4.17.1",
     "if-env": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
-  },
-  "comments": {
-    "comment-start:dev": "Script uses concurrently to start client and server apps at same time",
-    "comment-concurrently": "Concurrently is installed as a dev dependency to allow client and server to be started using single script"
   }
 }
