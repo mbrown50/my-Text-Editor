@@ -24,7 +24,7 @@
 
   JATE - Shows recorded text in browser
 
-  ![Image of deployed site 1](./images//JATE4.jpg "Deployed site")
+  ![Image of deployed site 1](./images/JATE4.jpg "Deployed site")
 
   ## License
   
