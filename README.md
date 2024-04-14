@@ -10,6 +10,22 @@
 
   [Description](#description) | [License](#license) | [Questions](#questions)
 
+  JATE
+
+  ![Image of deployed site 1](./images/JATE.jpg "Deployed site")
+
+  JATE - saves text 
+
+  ![Image of deployed site 1](./images/JATE2.jpg "Deployed site")
+
+  JATE - Install, runs outside of browser
+
+  ![Image of deployed site 1](./images/JATE3.jpg "Deployed site")
+
+  JATE - Shows recorded text in browser
+
+  ![Image of deployed site 1](./images//JATE4.jpg "Deployed site")
+
   ## License
   
   License: MIT
